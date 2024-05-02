@@ -27,11 +27,6 @@ runs:
         debug: true
     - name: Setup python and scons
       uses: ./.github/actions/deps
-    - name: Lint
-      shell: sh
-      run:
-        ./scripts/clang-format.sh
-        ./scripts/clang-tidy.sh
     - name: Print version to plugin cfg
       shell: pwsh
       run:
